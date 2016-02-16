@@ -7,3 +7,5 @@ It's just getting started at this point, none of the Javascript pieces have been
 ### Check it out
 
 [Bootstrap Dark Demo](http://bmcculley.github.io/bootstrap-dark/)
+
+![BootStrap Dark Demo Screenshot](http://imgur.com/4qPbe8d)
