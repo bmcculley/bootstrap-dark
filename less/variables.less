@@ -16,7 +16,7 @@
 
 @brand-primary:         darken(#3498db, 6.5%); 
 @brand-success:         #2ecc71;
-@brand-info:            #2980b9;
+@brand-info:            lighten(@brand-primary, 13.5%); // #2980b9;
 @brand-warning:         #f1c40f;
 @brand-danger:          #e74c3c;
 
@@ -186,7 +186,7 @@
 //##
 
 //** `<input>` background color
-@input-bg:                       #fff;
+@input-bg:                       @bg-darker;
 //** `<input disabled>` background color
 @input-bg-disabled:              @gray-lighter;
 
@@ -506,7 +506,7 @@
 @state-success-border:           darken(spin(@state-success-bg, -10), 5%);
 
 @state-info-text:                #f1f1f1;
-@state-info-bg:                  #2980b9;
+@state-info-bg:                  @brand-info;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
 @state-warning-text:             #333;
@@ -541,7 +541,7 @@
 //##
 
 //** Popover body background color
-@popover-bg:                          #fff;
+@popover-bg:                          @bg-dark;
 //** Popover maximum width
 @popover-max-width:                   276px;
 //** Popover border color
@@ -601,7 +601,7 @@
 @modal-title-line-height:     @line-height-base;
 
 //** Background color of modal content area
-@modal-content-bg:                             #fff;
+@modal-content-bg:                             @bg-dark;
 //** Modal content border color
 @modal-content-border-color:                   rgba(0,0,0,.2);
 //** Modal content border color **for IE8**
@@ -835,14 +835,14 @@
 //
 //##
 
-@code-color:                  #c7254e;
-@code-bg:                     #f9f2f4;
+@code-color:                  @gray-base;
+@code-bg:                     @bg-dark;
 
 @kbd-color:                   #fff;
 @kbd-bg:                      #333;
 
-@pre-bg:                      #f5f5f5;
-@pre-color:                   @gray-dark;
+@pre-bg:                      @bg-dark;
+@pre-color:                   @gray-base;
 @pre-border-color:            #ccc;
 @pre-scrollable-max-height:   340px;
 
